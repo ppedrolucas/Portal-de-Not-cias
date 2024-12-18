@@ -1,0 +1,19 @@
+/* Utility-first/Classes utilitárias - Classes que servem para fazer apenas UMA coisa */
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  /* Transformar o fluxo padrão em colunas */
+  grid-auto-flow: column;
+}
+
+.grid-cols-2 {
+  /* Criar duas colunas com uma fração da tela, cada */
+  grid-template-columns: 1fr 1fr;
+}
+
+.gap-16 {
+  /* Espaço entre os elementos */
+  gap: 16px;
+}

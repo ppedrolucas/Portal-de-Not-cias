@@ -53,12 +53,10 @@ h3 {
   margin-inline: auto;
 }
 
-/* Utility-first - Classes que servem para fazer apenas UMA coisa */
-.grid {
-  display: grid;
+img {
+  max-width: 100%;
 }
 
-.grid-flow-col {
-  /* Transformar o fluxo padrão em colunas */
-  grid-auto-flow: column;
+main {
+  margin-top: 40px;
 }

@@ -1,0 +1,7 @@
+#featured {
+  img {
+    height: 100%;
+    object-fit: cover; /*Cobrir todo o espaço que está sobrando, sem essa propriedade a imgem irá se esticar e deformar. Com ela irá ocupar todo o espaço disponível sem deformidade*/
+    border-radius: 4px;
+  }
+}
