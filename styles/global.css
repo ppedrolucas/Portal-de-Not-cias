@@ -16,7 +16,7 @@
   --text-color-secondary: #cbd5e1;
 
   /* Tipography */
-  --font-family: sans-serif;
+  --font-family: "Roboto Mono", sans-serif;
   --h1: 800 24/135% var(--font-family);
   --h2: 800 16/140% var(--font-family);
   --h3: 800 14/140% var(--font-family);
@@ -34,6 +34,7 @@ body {
 a {
   text-decoration: none;
   color: inherit; /*Herdando a cor do Body*/
+  font: var(--text-sm);
 }
 
 a:hover {
@@ -44,4 +45,20 @@ h1,
 h2,
 h3 {
   font: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  padding-inline: 32px;
+  margin-inline: auto;
+}
+
+/* Utility-first - Classes que servem para fazer apenas UMA coisa */
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  /* Transformar o fluxo padrão em colunas */
+  grid-auto-flow: column;
 }
