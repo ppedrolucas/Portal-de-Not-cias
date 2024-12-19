@@ -17,3 +17,16 @@
   /* Espaço entre os elementos */
   gap: 16px;
 }
+
+.text-2xl {
+  font: var(--h1);
+}
+.text-xl {
+  font: var(--h2);
+}
+.text-lg {
+  font: var(--h3);
+}
+.text-sm {
+  font: var(--text-sm);
+}
