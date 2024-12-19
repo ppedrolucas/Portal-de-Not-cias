@@ -22,6 +22,10 @@
       bottom: 0;
 
       padding: 24px;
+      &:has(.text-lg) {
+        /* SE tiver uma classe "text-lg" dentro de figcaption então aplique esse estilo */
+        padding: 12px;
+      }
       h2 {
         margin-top: 8px;
       }
