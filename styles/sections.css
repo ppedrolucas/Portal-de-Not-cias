@@ -2,6 +2,19 @@
   img {
     height: 100%;
     object-fit: cover; /*Cobrir todo o espaço que está sobrando, sem essa propriedade a imgem irá se esticar e deformar. Com ela irá ocupar todo o espaço disponível sem deformidade*/
+  }
+  .card {
     border-radius: 4px;
+    /* Overflow: transbordamento; hidden: esconda tudo que passar da caixa */
+    overflow: hidden;
+    position: relative;
+    /* Criando um pseudo elemento ANTES do elemento original */
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
   }
 }
