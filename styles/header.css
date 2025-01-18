@@ -21,3 +21,22 @@
   border-inline: none;
   justify-content: space-between;
 }
+
+@media (width <= 60em) {
+  #primary {
+    padding-block: 1rem;
+    div {
+      strong {
+        display: none;
+      }
+    }
+  }
+  #secondary {
+    overflow: scroll;
+    gap: 2rem;
+    a {
+      /* Tirar quebras de linha */
+      white-space: nowrap;
+    }
+  }
+}
