@@ -72,6 +72,13 @@ main {
     "featured featured"
     "weekly weekly"
     "ai aside";
+  @media (width < 60em) {
+    grid-template-areas:
+      "featured featured"
+      "weekly weekly"
+      "ai ai"
+      "aside aside";
+  }
 }
 
 .content-tag {

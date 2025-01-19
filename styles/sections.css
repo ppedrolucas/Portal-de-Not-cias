@@ -50,7 +50,22 @@ section header {
       }
       h2 {
         margin-top: 8px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
       }
+    }
+  }
+}
+@media (width <= 60em) {
+  #featured {
+    grid-auto-flow: row;
+    .awp {
+      height: 26rem;
+    }
+    div {
+      grid-template-columns: 1fr;
     }
   }
 }
@@ -78,6 +93,20 @@ section header {
     }
   }
 }
+@media (width <= 60em) {
+  #weekly {
+    div {
+      grid-template-columns: 1fr;
+      text-overflow: ellipsis;
+      figure {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}
 
 #ai {
   grid-area: ai;
@@ -90,6 +119,25 @@ section header {
   h3 {
     margin-block: 8px 4px;
   }
+
+  @media (width < 60em) {
+    article {
+      div {
+        h3 {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        p {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 4;
+        }
+      }
+    }
+  }
 }
 
 aside {
@@ -100,6 +148,10 @@ aside {
   margin-top: 32px;
   h3 {
     margin-top: 8px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
   img {
     width: 72px;
